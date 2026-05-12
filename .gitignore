@@ -3,6 +3,8 @@ _site
 node_modules
 .DS_STORE
 .playwright-mcp/
+.claude/
 mockup*.png
 dhaitz_hero.png
 my current hero.png
+my new hero.png
