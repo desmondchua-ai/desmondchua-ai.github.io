@@ -4,3 +4,5 @@ node_modules
 .DS_STORE
 .playwright-mcp/
 mockup*.png
+dhaitz_hero.png
+my current hero.png
