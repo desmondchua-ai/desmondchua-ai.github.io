@@ -1,29 +1,247 @@
-<div class="user-details">
-  <h1> Featured Projects </h1>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
+<div class="projects-inner">
+  <div class="section-eyebrow">Featured Projects</div>
+
+  <article class="project-card image-left">
+    <div class="project-image project-image-cedarcare">
+      <img src="{{ "/img/cedarcare.jpg" | prepend: site.baseurl }}" alt="CedarCare dashboard"
+           onerror="this.style.display='none';" />
+      <span class="image-note">Replace with real Streamlit screenshot</span>
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">CedarCare — BC Health Platform</h3>
+      <p class="project-desc">
+        AI-powered personal health management platform with a symptom assessment chatbot,
+        facility finder, and analytics dashboard for the BC healthcare ecosystem.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">OpenAI API</span>
+        <span class="tool-tag">SQL</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/cedarcare-bc-healthplatform" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+        <a class="btn-pill btn-pill-primary" href="https://cedarcare.streamlit.app" target="_blank" rel="noopener">
+          <i class="fa fa-play" aria-hidden="true"></i> Live Demo →
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card image-right">
+    <div class="project-body">
+      <h3 class="project-title">Maven Movies SQL + Power BI</h3>
+      <p class="project-desc">
+        End-to-end SQL due diligence on a DVD rental business. Complex queries → Power BI
+        executive dashboard with DAX measures and drill-through reporting.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">MySQL</span>
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">DAX</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/maven-movies-sql-powerbi" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+      </div>
+    </div>
+    <div class="project-image project-image-maven">
+      <img src="{{ "/img/maven.jpg" | prepend: site.baseurl }}" alt="Maven Movies dashboard"
+           onerror="this.style.display='none';" />
+      <span class="image-note">Replace with real Power BI screenshot</span>
+    </div>
+  </article>
+
+  <article class="project-card image-left">
+    <div class="project-image project-image-lax">
+      <img src="{{ "/img/lax.jpg" | prepend: site.baseurl }}" alt="LAX Flights dashboard"
+           onerror="this.style.display='none';" />
+      <span class="image-note">Replace with real Excel screenshot</span>
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">LAX Flights Excel Analysis</h3>
+      <p class="project-desc">
+        Data analysis and forecasting on 4,985 LAX flights. COUNTIFS, nested IF logic,
+        assumption-driven forecast model, and airline performance dashboard.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Excel</span>
+        <span class="tool-tag">Power Query</span>
+        <span class="tool-tag">Forecasting</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/lax-flights-excel-analysis" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card image-right">
+    <div class="project-body">
+      <h3 class="project-title">Healthcare NLP Analysis</h3>
+      <p class="project-desc">
+        NLP pipeline on 100 r/healthIT posts — LSA extractive + GPT-4o-mini abstractive
+        summarization, importance scoring, and sentiment distribution analysis.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">OpenAI API</span>
+        <span class="tool-tag">NLTK</span>
+        <span class="tool-tag">BeautifulSoup</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/healthcare-nlp-analysis" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+      </div>
+    </div>
+    <div class="project-image project-image-nlp">
+      <img src="{{ "/img/nlp.jpg" | prepend: site.baseurl }}" alt="Healthcare NLP analysis"
+           onerror="this.style.display='none';" />
+      <span class="image-note">Replace with real sentiment chart from outputs</span>
+    </div>
+  </article>
+
+  <article class="project-card image-left">
+    <div class="project-image project-image-stock">
+      <img src="{{ "/img/stock.jpg" | prepend: site.baseurl }}" alt="Stock prediction dashboard"
+           onerror="this.style.display='none';" />
+      <span class="image-note">Replace with real Streamlit screenshot</span>
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">Stock Price Analysis + Streamlit</h3>
+      <p class="project-desc">
+        S&amp;P 500 — CSV vs Parquet benchmarking, Pandas vs Polars, ML price prediction
+        (R²=0.9997) with a live interactive Streamlit dashboard.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">scikit-learn</span>
+        <span class="tool-tag">Plotly</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/stock-price-analysis" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+        <a class="btn-pill btn-pill-primary" href="https://sp500-desmond-stockprediction.streamlit.app" target="_blank" rel="noopener">
+          <i class="fa fa-play" aria-hidden="true"></i> Live Demo →
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <div class="section-eyebrow upcoming-eyebrow">Upcoming Projects</div>
+
+  <article class="project-card project-upcoming image-left">
+    <div class="project-image placeholder-coral">
+      <div class="placeholder-content">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <div class="placeholder-tags">
+          <span>Retail</span><span>Airbyte + dbt</span><span>Power BI</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">RetailIQ — Customer Analytics Platform</h3>
+      <p class="project-desc">
+        End-to-end retail analytics pipeline. ELT with Airbyte → dbt data models →
+        Power BI customer segmentation and sales performance dashboard.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Airbyte</span>
+        <span class="tool-tag">dbt</span>
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">SQL</span>
+      </div>
+      <div class="status-badge status-in-progress">
+        <span class="status-dot"></span> In Progress
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card project-upcoming image-right">
+    <div class="project-body">
+      <h3 class="project-title">FinSight — A/B Testing &amp; Churn Intelligence</h3>
+      <p class="project-desc">
+        Statistical A/B testing framework and churn prediction model for a fintech use
+        case. Scikit-learn + Streamlit + Power BI reporting layer.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">scikit-learn</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">Power BI</span>
+      </div>
+      <div class="status-badge status-in-progress">
+        <span class="status-dot"></span> In Progress
+      </div>
+    </div>
+    <div class="project-image placeholder-blue">
+      <div class="placeholder-content">
+        <i class="fa fa-flask" aria-hidden="true"></i>
+        <div class="placeholder-tags">
+          <span>Banking / Fintech</span><span>A/B Testing</span><span>ML</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card project-upcoming image-left">
+    <div class="project-image placeholder-green">
+      <div class="placeholder-content">
+        <i class="fa fa-shield" aria-hidden="true"></i>
+        <div class="placeholder-tags">
+          <span>Insurance</span><span>BigQuery</span><span>dbt</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">InsurFlow — Modern Insurance Data Pipeline</h3>
+      <p class="project-desc">
+        Cloud-native insurance analytics pipeline. Airbyte → BigQuery → dbt models →
+        Looker Studio covering loss ratio, combined ratio, and claims KPIs.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Airbyte</span>
+        <span class="tool-tag">BigQuery</span>
+        <span class="tool-tag">dbt</span>
+        <span class="tool-tag">Looker Studio</span>
+      </div>
+      <div class="status-badge status-in-progress">
+        <span class="status-dot"></span> In Progress
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card project-upcoming image-right">
+    <div class="project-body">
+      <h3 class="project-title">PolarMart Canada — Snowflake BA Project</h3>
+      <p class="project-desc">
+        Business analyst capstone on a Canadian retail dataset. Snowflake data warehouse →
+        business requirements → KPI framework → executive reporting.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Snowflake</span>
+        <span class="tool-tag">SQL</span>
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">BA Framework</span>
+      </div>
+      <div class="status-badge status-planned">
+        <span class="status-dot"></span> Planned
+      </div>
+    </div>
+    <div class="project-image placeholder-amber">
+      <div class="placeholder-content">
+        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        <div class="placeholder-tags">
+          <span>Snowflake</span><span>Retail BA</span><span>Canada</span>
+        </div>
+      </div>
+    </div>
+  </article>
 </div>

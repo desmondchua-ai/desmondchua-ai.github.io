@@ -1,30 +1,74 @@
- <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> {{site.user_description}} </p>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+<div class="about-inner">
+  <div class="profile-photo-wrap">
+    <img class="profile-photo" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" alt="Desmond Chua"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+    <div class="profile-photo-fallback" aria-hidden="true">
+      <i class="fa fa-user" aria-hidden="true"></i>
     </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+  </div>
+
+  <p class="about-bio">
+    Data Analyst &amp; Analytics Engineer based in Vancouver, BC. I turn messy data into clear
+    business decisions — combining SQL pipelines, BI dashboards, and AI-assisted analytics.
+    Focused on healthcare, retail, and insurance in the Canadian market. Open to new opportunities.
+  </p>
+
+  <div class="expertise-grid">
+    <div class="expertise-col">
+      <h3 class="expertise-title">Analyzing &amp; Engineering</h3>
+      <div class="expertise-icons">
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-database"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="devicon-python-plain"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-code-fork"></i></span>
+      </div>
+      <div class="tool-tags">
+        <span class="tool-tag">SQL</span>
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">dbt</span>
+        <span class="tool-tag">Snowflake</span>
+        <span class="tool-tag">Excel</span>
+      </div>
+      <p class="expertise-desc">
+        From ad-hoc queries to data pipelines — building reliable, analytics-ready data
+        models for business use.
+      </p>
     </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+
+    <div class="expertise-col">
+      <h3 class="expertise-title">Visualizing</h3>
+      <div class="expertise-icons">
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-bar-chart"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-line-chart"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-th-large"></i></span>
+      </div>
+      <div class="tool-tags">
+        <span class="tool-tag">Power BI</span>
+        <span class="tool-tag">Tableau</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">Looker Studio</span>
+      </div>
+      <p class="expertise-desc">
+        Interactive dashboards and self-serve analytics that stakeholders can actually
+        use to make decisions.
+      </p>
     </div>
+
+    <div class="expertise-col">
+      <h3 class="expertise-title">AI &amp; Business</h3>
+      <div class="expertise-icons">
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-graduation-cap"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-lightbulb-o"></i></span>
+        <span class="expertise-icon" aria-hidden="true"><i class="fa fa-comments-o"></i></span>
+      </div>
+      <div class="tool-tags">
+        <span class="tool-tag">Prompt Engineering</span>
+        <span class="tool-tag">Requirements</span>
+        <span class="tool-tag">Stakeholder Comms</span>
+      </div>
+      <p class="expertise-desc">
+        Framing business problems before touching data — using AI as a multiplier across
+        the analytics workflow.
+      </p>
+    </div>
+  </div>
 </div>

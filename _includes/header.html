@@ -1,19 +1,37 @@
-<div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-      </div>
+<div id="particles-js" class="portfolio-hero">
+  <div class="hero-inner">
+    <h1 class="hero-name">{{ site.username }}</h1>
+    <p class="hero-location">
+      <i class="fa fa-map-marker" aria-hidden="true"></i> Vancouver, BC, Canada
+    </p>
+    <div class="hero-pills">
+      <span class="role-pill">Data Analyst</span>
+      <span class="role-pill">Analytics Engineer</span>
+      <span class="role-pill">AI Business Analyst</span>
+    </div>
+    <div class="hero-icons">
+      <a class="social-btn" aria-label="Send email" href="mailto:{{ site.email }}">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+      <a class="social-btn" aria-label="GitHub" target="_blank" rel="noopener" href="https://github.com/{{ site.github_username }}">
+        <i class="fa fa-github-alt" aria-hidden="true"></i>
+      </a>
+      <a class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener" href="https://linkedin.com/in/{{ site.linkedin_username }}">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a class="social-btn" aria-label="Tableau Public" target="_blank" rel="noopener" href="https://public.tableau.com">
+        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+      </a>
+    </div>
+    <nav class="hero-nav">
+      <a class="hero-nav-link" href="#about" data-scroll>About</a>
+      <span class="hero-nav-dot">·</span>
+      <a class="hero-nav-link" href="#projects" data-scroll>Projects</a>
+      <span class="hero-nav-dot">·</span>
+      <a class="hero-nav-link" href="#practice" data-scroll>Practice</a>
+    </nav>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="hero-down" href="#about" data-scroll aria-label="Scroll down">
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  </a>
 </div>

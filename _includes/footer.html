@@ -1,6 +1,15 @@
+<div class="cert-bar">
+  <span class="cert-dot"></span>
+  <span class="cert-text">Certifications in Progress</span>
+</div>
+
 <footer class="footer">
-    <p>&copy; {{site.username}}</p>
-    <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+  <p>&copy; {{ "now" | date: "%Y" }} {{ site.username }}</p>
+  <p>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a> ·
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
+  </p>
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>

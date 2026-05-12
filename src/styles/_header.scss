@@ -1,5 +1,9 @@
 #particles-js {
-  background: $main;
+  background: linear-gradient(160deg,
+    #1a1a4e 0%,
+    #3d1a6e 40%,
+    #7b2d5e 75%,
+    #c0392b 100%);
   display: flex;
   vertical-align: bottom;
   width: 100%;
