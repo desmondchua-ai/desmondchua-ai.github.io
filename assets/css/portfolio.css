@@ -232,9 +232,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: relative;
 }
 
-.section-about        { background: var(--color-bg); }
-.section-projects     { background: var(--color-bg-soft); }
-.section-practice     { background: var(--color-bg); }
+.section-about          { background: var(--color-bg); }
+.section-projects       { background: var(--color-bg-soft); }
+.section-practice       { background: var(--color-bg); }
+.section-certifications { background: var(--color-bg-soft); }
 
 .section-eyebrow {
   font-size: 22px;
@@ -608,28 +609,19 @@ ul { margin: 0; padding: 0; list-style: none; }
    CERTIFICATIONS BAR + FOOTER
    ========================================================================= */
 
-.cert-bar {
-  background: var(--color-bg-soft);
-  border-top: 0.5px solid var(--color-border);
-  padding: 1rem 2rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.cert-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-amber);
-  display: inline-block;
-}
-
-.cert-text {
-  font-size: 12px;
+.cert-intro {
+  font-size: 0.95rem;
   color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+  max-width: 700px;
+}
+
+.cert-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 1rem;
 }
 
 .footer {
