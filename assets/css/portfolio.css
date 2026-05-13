@@ -232,10 +232,19 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: relative;
 }
 
+/* Override the legacy theme's #about / #projects width caps so every
+   section spans the full viewport — content is constrained by the inner
+   wrapper, not by the section element itself. */
+section.section,
+#about, #projects, #practice, #certifications {
+  width: 100% !important;
+  max-width: none !important;
+}
+
 .section-about          { background: var(--color-bg); }
 .section-projects       { background: var(--color-bg-soft); }
 .section-practice       { background: var(--color-bg); }
-.section-certifications { background: var(--color-bg-soft); }
+.section-certifications { background: var(--color-bg); }
 
 .section-eyebrow {
   font-size: 22px;
