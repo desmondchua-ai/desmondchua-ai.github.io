@@ -2,29 +2,35 @@
   <div class="section-eyebrow">Featured projects</div>
 
   <article class="project-card image-left">
-    <div class="project-image project-image-cedarcare">
-      <img src="{{ "/assets/img/cedarcare.jpg" | prepend: site.baseurl }}"
-           alt="CedarCare screenshot"
+    <div class="project-image project-image-worldlife">
+      <img src="{{ "/assets/img/WorldLifeExpectancy_Infographic.jpg" | prepend: site.baseurl }}"
+           alt="World Life Expectancy infographic"
            style="width:100%; height:100%; object-fit:cover; display:block;" />
     </div>
     <div class="project-body">
-      <h3 class="project-title">CedarCare — BC Health Platform</h3>
+      <h3 class="project-title">World Life Expectancy — What Drives a Long Life?</h3>
       <p class="project-desc">
-        AI-powered personal health management platform with a symptom assessment chatbot,
-        facility finder, and analytics dashboard for the BC healthcare ecosystem.
+        An end-to-end MySQL case study on 15 years of country-level health data — 193
+        countries, 2007–2022. Act 1 cleans the raw 2,941-row import with ROW_NUMBER()
+        de-duplication, self-join back-fills, and honest NULL handling; Act 2 runs the
+        analysis that surfaces a 5-year global rise in life expectancy against a stubborn
+        12-year development gap and a 9-year wealth gap. Built to production shape — a
+        staging → clean → serve (Bronze → Silver → Gold) flow that maps directly onto the
+        Azure Data Factory → Microsoft Fabric → Power BI stack.
       </p>
       <div class="tool-tags">
-        <span class="tool-tag">Python</span>
-        <span class="tool-tag">Streamlit</span>
-        <span class="tool-tag">OpenAI API</span>
-        <span class="tool-tag">SQL</span>
+        <span class="tool-tag">MySQL</span>
+        <span class="tool-tag">Window Functions</span>
+        <span class="tool-tag">Data Cleaning</span>
+        <span class="tool-tag">Medallion Architecture</span>
+        <span class="tool-tag">EDA</span>
       </div>
       <div class="project-buttons">
-        <a class="btn-pill" href="https://github.com/desmondchua-ai/cedarcare-bc-healthplatform" target="_blank" rel="noopener">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/world-life-expectancy-sql" target="_blank" rel="noopener">
           <i class="fa fa-github" aria-hidden="true"></i> GitHub →
         </a>
-        <a class="btn-pill btn-pill-primary" href="https://cedarcare.streamlit.app" target="_blank" rel="noopener">
-          <i class="fa fa-play" aria-hidden="true"></i> Live Demo →
+        <a class="btn-pill btn-pill-primary" href="https://aboard-aftershave-7a6.notion.site/World-Life-Expectancy-What-Drives-a-Long-Life-37766a9c434c811bbd9edfb906e8d78d" target="_blank" rel="noopener">
+          <i class="fa fa-external-link" aria-hidden="true"></i> Case Study →
         </a>
       </div>
     </div>
@@ -56,11 +62,35 @@
   </article>
 
   <article class="project-card image-left">
-    <div class="project-image project-image-lax">
-      <img src="{{ "/assets/img/lax.jpg" | prepend: site.baseurl }}"
-           alt="LAX Flights screenshot"
+    <div class="project-image project-image-cedarcare">
+      <img src="{{ "/assets/img/cedarcare.jpg" | prepend: site.baseurl }}"
+           alt="CedarCare screenshot"
            style="width:100%; height:100%; object-fit:cover; display:block;" />
     </div>
+    <div class="project-body">
+      <h3 class="project-title">CedarCare — BC Health Platform</h3>
+      <p class="project-desc">
+        AI-powered personal health management platform with a symptom assessment chatbot,
+        facility finder, and analytics dashboard for the BC healthcare ecosystem.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">Streamlit</span>
+        <span class="tool-tag">OpenAI API</span>
+        <span class="tool-tag">SQL</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://github.com/desmondchua-ai/cedarcare-bc-healthplatform" target="_blank" rel="noopener">
+          <i class="fa fa-github" aria-hidden="true"></i> GitHub →
+        </a>
+        <a class="btn-pill btn-pill-primary" href="https://cedarcare.streamlit.app" target="_blank" rel="noopener">
+          <i class="fa fa-play" aria-hidden="true"></i> Live Demo →
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-card image-right">
     <div class="project-body">
       <h3 class="project-title">LAX Flights Excel Analysis</h3>
       <p class="project-desc">
@@ -78,9 +108,19 @@
         </a>
       </div>
     </div>
+    <div class="project-image project-image-lax">
+      <img src="{{ "/assets/img/lax.jpg" | prepend: site.baseurl }}"
+           alt="LAX Flights screenshot"
+           style="width:100%; height:100%; object-fit:cover; display:block;" />
+    </div>
   </article>
 
-  <article class="project-card image-right">
+  <article class="project-card image-left">
+    <div class="project-image project-image-nlp">
+      <img src="{{ "/assets/img/nlp.jpg" | prepend: site.baseurl }}"
+           alt="Healthcare NLP screenshot"
+           style="width:100%; height:100%; object-fit:cover; display:block;" />
+    </div>
     <div class="project-body">
       <h3 class="project-title">Healthcare NLP Analysis</h3>
       <p class="project-desc">
@@ -99,19 +139,9 @@
         </a>
       </div>
     </div>
-    <div class="project-image project-image-nlp">
-      <img src="{{ "/assets/img/nlp.jpg" | prepend: site.baseurl }}"
-           alt="Healthcare NLP screenshot"
-           style="width:100%; height:100%; object-fit:cover; display:block;" />
-    </div>
   </article>
 
-  <article class="project-card image-left">
-    <div class="project-image project-image-stock">
-      <img src="{{ "/assets/img/stock.jpg" | prepend: site.baseurl }}"
-           alt="Stock Price screenshot"
-           style="width:100%; height:100%; object-fit:cover; display:block;" />
-    </div>
+  <article class="project-card image-right">
     <div class="project-body">
       <h3 class="project-title">Stock Price Analysis + Streamlit</h3>
       <p class="project-desc">
@@ -130,6 +160,45 @@
         </a>
         <a class="btn-pill btn-pill-primary" href="https://sp500-desmond-stockprediction.streamlit.app" target="_blank" rel="noopener">
           <i class="fa fa-play" aria-hidden="true"></i> Live Demo →
+        </a>
+      </div>
+    </div>
+    <div class="project-image project-image-stock">
+      <img src="{{ "/assets/img/stock.jpg" | prepend: site.baseurl }}"
+           alt="Stock Price screenshot"
+           style="width:100%; height:100%; object-fit:cover; display:block;" />
+    </div>
+  </article>
+
+  <div class="section-eyebrow automation-eyebrow">Automation</div>
+
+  <article class="project-card image-left">
+    <div class="project-image project-image-claims">
+      <img src="{{ "/assets/img/Claims_LifeCycle.png" | prepend: site.baseurl }}"
+           alt="Claims lifecycle automation diagram"
+           style="width:100%; height:100%; object-fit:cover; display:block;" />
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">Automating Claimant Communications</h3>
+      <p class="project-desc">
+        A Power Automate build that replaces manual claimant emailing for an insurance
+        claims team. Seven cloud flows read an Excel claims table, route the right message
+        for each of six statuses, attach settlement letters, and write status back to the
+        source so no claimant is contacted twice. The case study works each problem two
+        ways — loop-and-condition vs. filter-at-source, Switch vs. per-status queries — to
+        show the production trade-offs, and surfaces the silent 256-row pagination limit
+        that breaks naïve flows at scale.
+      </p>
+      <div class="tool-tags">
+        <span class="tool-tag">Power Automate</span>
+        <span class="tool-tag">Excel Online</span>
+        <span class="tool-tag">Office 365 Outlook</span>
+        <span class="tool-tag">OneDrive</span>
+        <span class="tool-tag">OData</span>
+      </div>
+      <div class="project-buttons">
+        <a class="btn-pill" href="https://aboard-aftershave-7a6.notion.site/Case-Study-Automating-Claimant-Communications-37a66a9c434c81a8b3dacc3db0c4e0c3" target="_blank" rel="noopener">
+          <i class="fa fa-external-link" aria-hidden="true"></i> Case Study →
         </a>
       </div>
     </div>
