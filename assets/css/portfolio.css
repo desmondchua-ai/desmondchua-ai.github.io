@@ -459,8 +459,6 @@ section.section,
   height: 100%;
   object-fit: cover;
   display: block;
-  /* Shared frame so light/white screenshots keep a defined edge on the cream page */
-  border: 0.5px solid rgba(0, 0, 0, 0.10);
   border-radius: var(--radius-card);
 }
 
